@@ -1,3 +1,5 @@
+![Banner](images/Baby_Names_Banner_Image.png)
+
 # Analyzing American Baby Name Trends
 
 Explore American baby name trends using 101 years of data from the U.S. Social Security Administration. This project provides insights into the evolution of baby names and their popularity over time.
