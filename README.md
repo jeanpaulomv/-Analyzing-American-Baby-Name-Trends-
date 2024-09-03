@@ -8,6 +8,11 @@ Explore American baby name trends using 101 years of data from the U.S. Social S
 
 This analysis investigates how baby name popularity has changed from 1920 to 2020. Key tasks include identifying timeless names, classifying names based on popularity, and examining trends for female and male names. The dataset includes names given to at least 5,000 babies per year.
 
+## Skills Applied
+
+- **SQL Queries**: Utilized complex SQL queries, including CASE WHEN, LIKE, subqueries, common table expressions (CTEs), and window functions to analyze data.
+- **Data Analysis**: Employed techniques to classify, rank, and track trends in baby names over time.
+
 ## Key Insights
 
 1. **Timeless Names**: Identified names that have remained popular across all 101 years.
