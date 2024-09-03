@@ -17,7 +17,7 @@ Find names that have been given to over 5,000 babies of either sex every year fo
 
 ## **Task 2: Instructions**
 
-<h2><a href="baby_names_analysis.md#2-timeless-or-trendy?">Task 2:</a></h2>
+<h2><a href="baby_names_analysis.md#2-timeless-or-trendy">Task 2:</a></h2>
 
 Classify each name's popularity according to the number of years that the name appears in the dataset.
 
