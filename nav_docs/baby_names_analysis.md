@@ -1,4 +1,4 @@
-<img src="https://github.com/jeanpaulomv/-Analyzing-American-Baby-Name-Trends-/blob/main/images/baby_names.jpg" alt="Banner" width="600">
+<img src="https://github.com/jeanpaulomv/-Analyzing-American-Baby-Name-Trends-/blob/main/images/baby_names.jpg" alt="Banner" width="250">
 
 ## 1. Classic American names
 
@@ -37,6 +37,8 @@
 </tbody>
 </table>
 <p>Let's get oriented to American baby name tastes by looking at the names that have stood the test of time!</p>
+
+**[Return to Task 1](instructions.md#task-1)**
 
 ```sql
 %%sql
@@ -100,6 +102,8 @@ ORDER BY SUM(num) DESC;
 
 <p>Wow, it looks like there are a lot of timeless traditionally male names! Elizabeth is holding her own for the female names, too. </p>
 <p>Now, let's broaden our understanding of the dataset by looking at all names. We'll attempt to capture the type of popularity that each name in the dataset enjoyed. Was the name classic and popular across many years or trendy, only popular for a few years? Let's find out. </p>
+
+**[Return to Task 2](instructions.md#task-2)**
 
 ```sql
 %%sql
@@ -2877,6 +2881,8 @@ ORDER BY first_name;
 <p>Since we didn't get many traditionally female names in our classic American names search in the first task, let's limit our search to names which were given to female babies. </p>
 <p>We can use this opportunity to practice window functions by assigning a rank to female names based on the number of babies that have ever been given that name. What are the top-ranked female names since 1920?</p>
 
+**[Return to Task 3](instructions.md#task-3)**
+
 ```sql
 %%sql
 postgresql:///names
@@ -2963,6 +2969,8 @@ LIMIT 10;
 <p>Perhaps a friend has heard of our work analyzing baby names and would like help choosing a name for her baby, a girl. She doesn't like any of the top-ranked names we found in the previous task. </p>
 <p>She's set on a traditionally female name ending in the letter 'a' since she's heard that vowels in baby names are trendy. She's also looking for a name that has been popular in the years since 2015. </p>
 <p>Let's see what we can do to find some options for this friend!</p>
+
+**[Return to Task 4](instructions.md#task-4)**
 
 ```sql
 %%sql
@@ -3052,6 +3060,8 @@ ORDER BY SUM(num) DESC;
 
 <p>Based on the results in the previous task, we can see that Olivia is the most popular female name ending in 'A' since 2015. When did the name Olivia become so popular?</p>
 <p>Let's explore the rise of the name Olivia with the help of a window function.</p>
+
+**[Return to Task 5](instructions.md#task-5)**
 
 ```sql
 %%sql
@@ -3270,6 +3280,8 @@ ORDER BY year;
 <p>Wow, Olivia has had a meteoric rise! Let's take a look at traditionally male names now. We saw in the first task that there are nine traditionally male names given to at least 5,000 babies every single year in our 101-year dataset! Those names are classics, but showing up in the dataset every year doesn't necessarily mean that the timeless names were the most popular. Let's explore popular male names a little further.</p>
 <p>In the next two tasks, we will build up to listing every year along with the most popular male name in that year. This presents a common problem: how do we find the greatest X in a group? Or, in the context of this problem, how do we find the male name given to the highest number of babies in a year? </p>
 <p>In SQL, one approach is to use a subquery. We can first write a query that selects the <code>year</code> and the maximum <code>num</code> of babies given any single male name in that year. For example, in 1989, the male name given to the highest number of babies was given to 65,339 babies. We'll write this query in this task. In the next task, we can use the code from this task as a subquery to look up the <code>first_name</code> that was given to 65,339 babies in 1989… as well as the top male first name for all other years!</p>
+
+**[Return to Task 6](instructions.md#task-6)**
 
 ```sql
 %%sql
@@ -3705,6 +3717,8 @@ GROUP BY year;
 
 <p>In the previous task, we found the maximum number of babies given any one male name in each year. Incredibly, the most popular name each year varied from being given to less than 20,000 babies to being given to more than 90,000! </p>
 <p>In this task, we find out what that top male name is for each year in our dataset. </p>
+
+**[Return to Task 7](instructions.md#task-7)**
 
 ```sql
 %%sql
@@ -4250,6 +4264,8 @@ ORDER BY bn.year DESC;
 ## 8. The most years at number one
 
 <p>Noah and Liam have ruled the roost in the last few years, but if we scroll down in the results, it looks like Michael and Jacob have also spent a good number of years as the top name! Which name has been number one for the largest number of years? Let's use a common table expression to find out. </p>
+
+**[Return to Task 8](instructions.md#task-8)**
 
 ```sql
 %%sql
