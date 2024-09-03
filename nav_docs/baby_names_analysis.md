@@ -1,4 +1,4 @@
-<img src="images/baby_names.jpg" alt="Banner" width="600">
+<img src="https://github.com/jeanpaulomv/-Analyzing-American-Baby-Name-Trends-/blob/main/images/baby_names.jpg" alt="Banner" width="600">
 
 ## 1. Classic American names
 
