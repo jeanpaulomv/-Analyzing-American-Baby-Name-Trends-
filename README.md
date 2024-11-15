@@ -16,7 +16,7 @@ This analysis investigates how baby name popularity has changed from 1920 to 202
 This repository includes a folder called `docs` that contains two files:
 
 - **[instructions.md](/docs/instructions.md)**: This file provides detailed instructions for various tasks and queries.
-- **[baby_names_analysis.md](/docs/baby_names_analysis.ipynb)**: This file contains the analysis and results for the tasks described in the `instructions.md` file.
+- **[baby_names_analysis.ipynb](/docs/baby_names_analysis.ipynb)**: This file contains the analysis and results for the tasks described in the `instructions.md` file.
 
 You can navigate between these files to interact with the instructions and the corresponding SQL code.
 
