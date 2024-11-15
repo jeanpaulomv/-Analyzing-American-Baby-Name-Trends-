@@ -31,10 +31,6 @@ You can navigate between these files to interact with the instructions and the c
 7. **Top Male Names History**: Determined which male names have been the top name most frequently.
 8. **Top Male Names Count**: Counted the number of years each name was the top male name.
 
-## Usage
-
-To run the analysis, ensure you have a PostgreSQL database set up with the provided SQL scripts and dataset. Execute the SQL queries in the notebook to explore and visualize the trends in baby names.
-
 ## Contact
 
 For questions or further information, please connect with me.
