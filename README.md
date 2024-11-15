@@ -1,8 +1,6 @@
-![Banner](images/Baby_Names_Banner_Image.png)
-
 # Analyzing American Baby Name Trends
 
-Explore American baby name trends using 101 years of data from the U.S. Social Security Administration. This project provides insights into the evolution of baby names and their popularity over time.
+![Banner](images/Baby_Names_Banner_Image.png)
 
 ## Project Overview
 
@@ -13,23 +11,14 @@ This analysis investigates how baby name popularity has changed from 1920 to 202
 - **SQL Queries**: Utilized complex SQL queries, including CASE WHEN, LIKE, subqueries, common table expressions (CTEs), and window functions to analyze data.
 - **Data Analysis**: Employed techniques to classify, rank, and track trends in baby names over time.
 
-## Interactive Files
+## Files
 
-This repository includes a folder named `nav_docs` that contains interactive documentation. Inside this folder, you will find two Markdown files:
+This repository includes a folder called `docs` that contains two files:
 
-- **[instructions.md](nav_docs/instructions.md)**: This file provides detailed instructions for various tasks and queries.
-- **[baby_names_analysis.md](nav_docs/baby_names_analysis.md)**: This file contains the analysis and results for the tasks described in the `instructions.md` file.
+- **[instructions.md](/docs/instructions.md)**: This file provides detailed instructions for various tasks and queries.
+- **[baby_names_analysis.md](/docs/baby_names_analysis.ipynb)**: This file contains the analysis and results for the tasks described in the `instructions.md` file.
 
-You can navigate between these files to interact with the instructions and corresponding SQL code. For example, each task in `instructions.md` contains links that will direct you to specific sections in `baby_names_analysis.md` where you can review the relevant code and results.
-
-To explore the interactive documentation:
-
-1. **Open the `nav_docs` folder** to access the files.
-2. **Follow the links** within `instructions.md` to find detailed analysis in `baby_names_analysis.md`.
-3. **Use the links** in `baby_names_analysis.md` to return to the corresponding instructions in `instructions.md`.
-
-This setup allows you to seamlessly navigate between tasks and their related SQL queries.
-
+You can navigate between these files to interact with the instructions and the corresponding SQL code.
 
 ## Key Insights
 
@@ -41,7 +30,6 @@ This setup allows you to seamlessly navigate between tasks and their related SQL
 6. **Most Popular Male Names**: Analyzed the most popular male names for each year.
 7. **Top Male Names History**: Determined which male names have been the top name most frequently.
 8. **Top Male Names Count**: Counted the number of years each name was the top male name.
-
 
 ## Usage
 

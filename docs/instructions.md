@@ -2,9 +2,9 @@
 
 ## **Good to know**
 
-This project uses techniques learned in [**Intermediate SQL**](https://app.datacamp.com/learn/courses/intermediate-sql), including `CASE WHEN` statements, pattern matching using the `LIKE` operator, subqueries, common table expressions, and window functions. You'll also be expected to know concepts from [**Introduction to SQL**](https://app.datacamp.com/learn/courses/introduction-to-sql) and [**Joining Data with SQL**](https://learn.datacamp.com/courses/joining-data-in-postgresql), such as how to select columns from a table, filter rows where they meet a criterion, use aggregation functions, perform calculations on groups of rows, filter grouped data, and join data.
+This project uses techniques learned in **Intermediate SQL**, including `CASE WHEN` statements, pattern matching using the `LIKE` operator, subqueries, common table expressions, and window functions. You'll also be expected to know concepts from **Introduction to SQL** and **Joining Data with SQL**, such as how to select columns from a table, filter rows where they meet a criterion, use aggregation functions, perform calculations on groups of rows, filter grouped data, and join data.
 
-<h2><a href="baby_names_analysis.md#1-classic-american-names">Task 1:</a></h2>
+<h2>Task 1:</h2>
 
 Find names that have been given to over 5,000 babies of either sex every year for the 101 years from 1920 through 2020; recall that names only show up in our dataset when at least 5,000 babies have been given that name in a year.
 
@@ -13,7 +13,7 @@ Find names that have been given to over 5,000 babies of either sex every year fo
 - Order the results by the total number of babies that have ever been given that name, descending.
 - _The line `postgresql:///names` is used to connect to the database; don't remove it._
 
-<h2><a href="baby_names_analysis.md#2-timeless-or-trendy">Task 2:</a></h2>
+<h2>Task 2:</h2>
 
 Classify each name's popularity according to the number of years that the name appears in the dataset.
 
@@ -22,7 +22,7 @@ Classify each name's popularity according to the number of years that the name a
 - Alias the new classification column as `popularity_type`.
 - Order the results alphabetically by `first_name`.
 
-<h2><a href="baby_names_analysis.md#3-top-ranked-female-names-since-1920">Task 3:</a></h2>
+<h2>Task 3:</h2>
 
 Let's take a look at the ten highest-ranked American female names in our dataset.
 
@@ -34,11 +34,10 @@ Let's take a look at the ten highest-ranked American female names in our dataset
 ### **Hint**
 
 - To rank query results based on the descending `SUM` of a column, aliasing as `rank`, use this snippet:
-  ```sql
-  RANK() OVER(ORDER BY SUM(column) DESC) AS rank
-  ```
 
-<h2><a href="baby_names_analysis.md#4-picking-a-baby-name">Task 4:</a></h2>
+  ![Hint Task 3](/images/hint_task_3.png)
+
+<h2>Task 4:</h2>
 
 Return a list of first names which meet this friend's baby name criteria.
 
@@ -46,7 +45,7 @@ Return a list of first names which meet this friend's baby name criteria.
 - Filter the data for results where `sex` equals 'F', the `year` is greater than 2015, and the `first_name` ends in an 'a.'
 - Group the data by `first_name` and order by the total number of babies ever given that `first_name`, descending.
 
-<h2><a href="baby_names_analysis.md#5-the-Olivia-expansion">Task 5:</a></h2>
+<h2>Task 5:</h2>
 
 Find the cumulative number of babies named Olivia over the years since the name first appeared in our dataset.
 
@@ -55,14 +54,14 @@ Find the cumulative number of babies named Olivia over the years since the name 
 - Filter the results so that only data for the name Olivia is returned.
 - Order the results by `year` from the earliest year Olivia appeared in the dataset to the most recent.
 
-<h2><a href="baby_names_analysis.md#6-Many-males-with-the-same-name">Task 6:</a></h2>
+<h2>Task 6:</h2>
 
 Write a query that selects the `year` and the maximum `num` of babies given any male name in that year.
 
 - Select the `year` and the maximum `num` of babies given any one male name in that year; alias the maximum as `max_num`.
 - Filter the data to include only results where `sex` equals 'M'.
 
-<h2><a href="baby_names_analysis.md#7-Top-male-names-over-the-years">Task 7:</a></h2>
+<h2>Task 7:</h2>
 
 Using the previous task's code as a subquery, look up the `first_name` that corresponds to the maximum number of babies given a specific male name in a year.
 
@@ -74,18 +73,11 @@ Using the previous task's code as a subquery, look up the `first_name` that corr
 
 - The query takes the following form:
 
-  ```sql
-  SELECT ...
-  FROM ...
-  INNER JOIN (--subquery here
-      )AS ...
-  ON ...AND ...
-  ORDER BY ...;
-  ```
+  ![Hint Task 7](/images/hint_task_7.png)
 
 - Use an `INNER JOIN` so that only the `first_name` given to listed number of babies is returned for each year.
 
-<h2><a href="baby_names_analysis.md#8-The-most-years-at-number-one">Task 8:</a></h2>
+<h2>Task 8:</h2>
 
 Return a list of first names that have been the top male first name in any year along with a count of the number of years that name has been the top name.
 
@@ -96,12 +88,5 @@ Return a list of first names that have been the top male first name in any year 
 ### **Hint**
 
 - The query takes the following form:
-  ```sql
-  WITH ... AS (
-      --use the query from Task 7 as a common table expression (CTE) to count the number of years each male name has been the most common name
-  )
-  SELECT ...
-  FROM ...
-  GROUP BY ...
-  ORDER BY ...;
-  ```
+
+  ![Hint Task 8](/images/hint_task_8.png)
